@@ -1,0 +1,93 @@
+#include "utils.h"
+#include "RelayControl/conduction.h"
+#include "RelayControl/short.h"
+#include "RelayControl/chassis.h"
+#include "RelayControl/capacitance.h"
+
+FuncPtr relayConductions[] = {
+    Realy_Conduction_1,
+    Realy_Conduction_2,
+    Realy_Conduction_3,
+    Realy_Conduction_4,
+    Realy_Conduction_5,
+    Realy_Conduction_6,
+    Realy_Conduction_7,
+    Realy_Conduction_8,
+    Realy_Conduction_9,
+    Realy_Conduction_10,
+    Realy_Conduction_11,
+    Realy_Conduction_12,
+    Realy_Conduction_13,
+    Realy_Conduction_14,
+    Realy_Conduction_15,
+    Realy_Conduction_16,
+    Realy_Conduction_17,
+    Realy_Conduction_18,
+    Realy_Conduction_19,
+    Realy_Conduction_20,
+    Realy_Conduction_21};
+
+FuncPtr relayShorts[] = {
+    Relay_short_1,
+    Relay_short_2,
+    Relay_short_3,
+    Relay_short_4,
+    Relay_short_5,
+    Relay_short_6,
+    Relay_short_7,
+    Relay_short_8,
+    Relay_short_9,
+    Relay_short_10,
+    Relay_short_11,
+    Relay_short_12,
+    Relay_short_13,
+    Relay_short_14,
+    Relay_short_15,
+    Relay_short_16,
+    Relay_short_17,
+    Relay_short_18,
+    Relay_short_19};
+
+FuncPtr relayChassis[] = {
+    Realy_Chassis_1,
+    Realy_Chassis_2,
+    Realy_Chassis_3,
+    Realy_Chassis_4,
+    Realy_Chassis_5,
+    Realy_Chassis_6,
+    Realy_Chassis_7,
+    Realy_Chassis_8,
+    Realy_Chassis_9,
+    Realy_Chassis_10,
+    Realy_Chassis_11,
+    Realy_Chassis_12,
+    Realy_Chassis_13,
+    Realy_Chassis_14,
+    Realy_Chassis_15,
+    Realy_Chassis_16,
+    Realy_Chassis_17,
+    Realy_Chassis_18,
+    Realy_Chassis_19,
+    Realy_Chassis_20};
+
+FuncPtr relayCapacitance[] = {
+    Relay_Capacitance_1,
+    Relay_Capacitance_2,
+    Relay_Capacitance_3,
+    Relay_Capacitance_4,
+    Relay_Capacitance_5,
+    Relay_Capacitance_6,
+    Relay_Capacitance_7,
+    Relay_Capacitance_8,
+    Relay_Capacitance_9,
+    Relay_Capacitance_10,
+    Relay_Capacitance_11,
+    Relay_Capacitance_12,
+    Relay_Capacitance_13,
+    Relay_Capacitance_14,
+    Relay_Capacitance_15,
+    Relay_Capacitance_16,
+    Relay_Capacitance_17,
+    Relay_Capacitance_18,
+    Relay_Capacitance_19,
+    Relay_Capacitance_20};
