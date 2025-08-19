@@ -7,11 +7,20 @@
 void setup()
 {
   SerialUSB.begin(115200);
+  delay(3000);
+  SerialUSB.println("DEBUG: USB ready");
   configuration();
+  SerialUSB.println("DEBUG: Configuration done");
   initialize();
+  SerialUSB.println("DEBUG: Initialization done");
 }
 
 void loop()
 {
-  cmd.readCommand();
+  SerialUSB.println("RESULT: Looping...");
+  if(SerialUSB.available()) {
+    cmd.readCommand();
+  }
 }
+
+

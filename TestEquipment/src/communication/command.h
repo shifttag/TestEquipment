@@ -7,6 +7,7 @@ class Command {
 public:
     String command;
     void readCommand();
+    void processCommand(String command);
 };
 
 extern Command cmd;
