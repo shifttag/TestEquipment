@@ -8,6 +8,7 @@ void setup()
 {
   SerialUSB.begin(115200);
   while(!SerialUSB) {
+    // Wait for SerialUSB to be ready
   }
   configuration();
   initialize();
@@ -15,6 +16,7 @@ void setup()
 
 void loop()
 {
+  SerialUSB.println("RESULT: Looping...");
   if(SerialUSB.available()) {
     cmd.readCommand();
   }

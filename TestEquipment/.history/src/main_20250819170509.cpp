@@ -15,6 +15,7 @@ void setup()
 
 void loop()
 {
+  SerialUSB.println("RESULT: Looping...");
   if(SerialUSB.available()) {
     cmd.readCommand();
   }

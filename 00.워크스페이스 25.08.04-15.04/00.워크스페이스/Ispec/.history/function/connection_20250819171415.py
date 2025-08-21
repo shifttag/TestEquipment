@@ -95,7 +95,6 @@ def measure_short_loop(ser, dmm, update_ui_callback=None, collect_data_callback=
     for cnt in range(1, count):
         dmm.write("*CLS")
         ser.reset_input_buffer()
-        
         ser.write(f"short{cnt}\n".encode('utf-8'))
         time.sleep(0.1)
 

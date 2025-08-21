@@ -7,14 +7,14 @@
 void setup()
 {
   SerialUSB.begin(115200);
-  while(!SerialUSB) {
-  }
+  delay(3000);
   configuration();
   initialize();
 }
 
 void loop()
 {
+  SerialUSB.println("RESULT: Looping...");
   if(SerialUSB.available()) {
     cmd.readCommand();
   }
