@@ -66,8 +66,8 @@ void capacitanceModeLedControl(int num)
 {
   if (num == 1)
   {
-    uint32_t pattern = getPattern(22) | getPattern(23) | getPattern(24);
-    sendLED(pattern);
+    uint_
+    sendLED(getPattern(23));
   }
   else if (num == 20)
   {

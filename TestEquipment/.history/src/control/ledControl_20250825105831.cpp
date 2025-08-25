@@ -54,7 +54,7 @@ void chassisModeLedControl(int num)
 {
   if (num == 1)
   {
-    sendLED(getPattern(24));
+    sendLED(getPattern(23));
   }
   else if (num == 20)
   {
@@ -66,8 +66,7 @@ void capacitanceModeLedControl(int num)
 {
   if (num == 1)
   {
-    uint32_t pattern = getPattern(22) | getPattern(23) | getPattern(24);
-    sendLED(pattern);
+    sendLED(getPattern(23));
   }
   else if (num == 20)
   {

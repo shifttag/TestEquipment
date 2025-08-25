@@ -7,10 +7,6 @@
 void sendLED(uint32_t data);
 void ledReset();
 uint32_t getPattern(int ledNum);
-
-void conductionModeLedControl(int num);
-void shortModeLedControl(int num);
-void chassisModeLedControl(int num);
-void capacitanceModeLedControl(int num);
+uint32_t getModePattern(int mode);
 
 #endif

@@ -36,7 +36,7 @@ void Command::processCommand(String command)
   {
     int num = command.substring(10).toInt();
     if (num == 1 || num == 21) {
-      conductionModeLedControl(num);
+      modeCondLedControl(num);
     }
     String status = controlRelayConduction(num);
     // 처리 완료 후 명확히 전송
@@ -52,9 +52,6 @@ void Command::processCommand(String command)
   else if (command.startsWith("short"))
   {
     int num = command.substring(5).toInt();
-    if(num == 1 || num == 19) {
-      shortModeLedControl(num);
-    }
     String status = controlRelayShort(num);
     if (status == "OK") {
       sendLED(getPattern(num + 1));
@@ -68,9 +65,6 @@ void Command::processCommand(String command)
   else if (command.startsWith("chassis"))
   {
     int num = command.substring(7).toInt();
-    if(num == 1 || num == 20) {
-      chassisModeLedControl(num);
-    }
     String status = controlRelayChassis(num);
     if (status == "OK") {
       sendLED(getPattern(num));

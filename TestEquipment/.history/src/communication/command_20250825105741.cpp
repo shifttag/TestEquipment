@@ -69,7 +69,6 @@ void Command::processCommand(String command)
   {
     int num = command.substring(7).toInt();
     if(num == 1 || num == 20) {
-      chassisModeLedControl(num);
     }
     String status = controlRelayChassis(num);
     if (status == "OK") {

@@ -32,7 +32,7 @@ void ledReset()
 void conductionModeLedControl(int num)
 {
   if(num == 1) {
-    sendLED(getPattern(22));
+    sendLED(getPattern(21));
   } else if(num == 21) {
     sendLED(0);
   } 
@@ -42,7 +42,7 @@ void shortModeLedControl(int num)
 {
   if (num == 1)
   {
-    sendLED(getPattern(23));
+    sendLED(getPattern(22));
   }
   else if (num == 19)
   {
@@ -54,20 +54,7 @@ void chassisModeLedControl(int num)
 {
   if (num == 1)
   {
-    sendLED(getPattern(24));
-  }
-  else if (num == 20)
-  {
-    sendLED(0);
-  }
-}
-
-void capacitanceModeLedControl(int num)
-{
-  if (num == 1)
-  {
-    uint32_t pattern = getPattern(22) | getPattern(23) | getPattern(24);
-    sendLED(pattern);
+    sendLED(getPattern(23));
   }
   else if (num == 20)
   {
